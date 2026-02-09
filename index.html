@@ -1,14 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ECOMMERCE HOME</title>
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-  <header></header>
-  <main></main>
-  <footer></footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ECOMMERCE HOME</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="top-content">
+      <p>
+        FREE delivery & 40% Discount for next 3 orders! Place your 1st order in.
+      </p>
+
+      <div class="top-time">
+        <p>Until the end of the sale:</p>
+        <div class="time">
+          <span class="time-number">47</span><span class="time-type">days</span>
+          <span class="time-number">06</span
+          ><span class="time-type">hours</span>
+          <span class="time-number">55</span
+          ><span class="time-type">minutes</span>
+          <span class="time-number">51</span><span class="time-type">sec.</span>
+        </div>
+      </div>
+    </div>
+    <div class="middle-section">
+      <div class="middle-start">
+        <ul class="contactUs">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="">My account</a></li>
+          <li><a href="">Wishlist</a></li>
+        </ul>
+        <div class="slash"></div>
+        <div class="middle-hour">
+          <p>
+            We deliver to you every day from
+            <span style="color: #ea580c">7:00 to 23:00</span>
+          </p>
+        </div>
+      </div>
+      <div class="langAndPay">
+        <select class="pay-select">
+          <option value="uzbek">Uzbek</option>
+          <option value="russian">Russian</option>
+          <option value="english">English</option>
+          <option value="french">French</option>
+        </select>
+
+        <select class="pay-select">
+          <option value="uz">USD</option>
+          <option value="ru">UZS</option>
+          <option value="en">EURO</option>
+          <option value="fr">RUB</option>
+        </select>
+        <a href="#">Order Tracking</a>
+      </div>
+    </div>
+    <header>
+      <nav class="main-content">
+        <div class="logo-location">
+          <a href="#"><img src="./images/logo.png" alt="ShopStore" /></a>
+        </div>
+
+        <div class="location">
+          <img src="./images/location.png" alt="" />
+          <div class="location-text">
+            <p>Deliver to</p>
+            <p>all</p>
+          </div>
+        </div>
+
+        <label for="product" class="search-section">
+          <input
+            type="text"
+            name="product"
+            id="product"
+            placeholder="Search for products, categories or brands..."
+          /><button><img src="./images/searchBtn.svg" alt="" /></button>
+        </label>
+        <div class="users-section">
+          <button class="user-section">
+            <img src="./images/user.svg" alt="" />
+            <div class="user-register">
+              <p>Sign In</p>
+              <p>Account</p>
+            </div>
+          </button>
+          <button class="addBtn">
+            <img src="./images/cart.svg" alt="Cart" />
+            <div class="circle"><span class="circle-number">0</span></div>
+          </button>
+          <button class="addBtn">
+            <img src="./images/wishlist.svg" alt="Wishlist" />
+            <div class="circle"><span class="circle-number">0</span></div>
+          </button>
+        </div>
+      </nav>
+      <nav class="pages-section">
+        <div class="nav-category"></div>
+        <div class="nav-content">
+          <div class="nav-pages"></div>
+          <div class="nav-pro"></div>
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
 </html>
