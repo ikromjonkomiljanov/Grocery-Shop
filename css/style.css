@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+/* Barlow */
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -256,6 +258,365 @@ a {
   align-items: center;
   gap: 15px;
 }
+
+/* nav=section start*/
+
+.nav-section {
+  width: 100%;
+  padding: 15px 70px;
+  display: flex;
+}
+
+.nav-category {
+  width: 280px;
+  font-family: "Inter", sans-serif;
+}
+
+.category-dropdown {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.category-header {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+  font-weight: 700;
+  color: #1f2937;
+  user-select: none;
+}
+
+.header-left,
+.item-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+.arrow {
+  width: 12px;
+  opacity: 0.5;
+}
+.arrow-s {
+  width: 10px;
+  opacity: 0.3;
+}
+
+.category-list {
+  border-top: 1px solid #e5e7eb;
+}
+
+.category-item {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  border-bottom: 1px solid #f3f4f6;
+  font-size: 14px;
+  color: #374151;
+  transition: background 0.2s;
+  cursor: pointer;
+
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 21px;
+  vertical-align: middle;
+  color: #030712;
+}
+
+.category-item:last-child {
+  border-bottom: none;
+}
+
+.category-item:hover {
+  background-color: #f9fafb;
+  color: #634c9f;
+}
+
+/* nav-components */
+
+.nav-components {
+  width: 100%;
+  min-height: 512px;
+  margin-left: 20px;
+}
+
+.nav-components-links {
+  width: 100%;
+  height: 52px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.nav-components-links > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-compo-link1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-compo-link1 > li > a {
+  display: flex;
+  gap: 6px;
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 15px;
+  line-height: 48px;
+  vertical-align: middle;
+  color: black;
+}
+
+.nav-compo-link1 > li:hover {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 15px;
+  line-height: 48px;
+  vertical-align: middle;
+  color: #634c9f;
+  border-bottom: 1px solid #634c9f;
+}
+
+.nav-compo-link1 > li:hover a {
+  color: #634c9f;
+}
+
+.nav-compo-link2 {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-compo-link2 > li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.nav-compo-link2 :nth-child(1) a {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 15px;
+  line-height: 48px;
+  letter-spacing: -0.3px;
+  vertical-align: middle;
+  color: #030712;
+}
+
+.nav-compo-link2 :nth-child(2) a {
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 15px;
+  color: #dc2626;
+}
+
+.sale {
+  font-size: 12px;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+  background: linear-gradient(#dc2626, #ea580c);
+}
+
+/* home page start */
+
+.home-section {
+  width: 100%;
+  min-height: 438px;
+  padding: 60px;
+  margin-top: 24px;
+  background-image: url(../images/homeBg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.home-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.home-text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 9px;
+}
+
+.home-text :nth-child(1) {
+  padding: 9px;
+  border-radius: 3px;
+  background: radial-gradient(#16a34a80, #22c55e00);
+
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 12px;
+  vertical-align: middle;
+  color: #166534;
+}
+
+.home-text > h1 {
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 42px;
+  line-height: 50.4px;
+  letter-spacing: -1.4px;
+  vertical-align: middle;
+  color: #39245f;
+}
+
+.home-text :nth-child(3) {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 20px;
+  vertical-align: middle;
+}
+
+.home-btns {
+  display: flex;
+  gap: 16px;
+}
+
+.home-btns > button {
+  cursor: pointer;
+  padding: 12px 18px;
+  border-radius: 6px;
+  border: none;
+  background: #634c9f;
+
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+}
+
+.shop-price {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.shop-price :nth-child(1) {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.red-price {
+  font-family: Barlow, sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 28px;
+  line-height: 28px;
+  letter-spacing: -0.56px;
+  vertical-align: middle;
+  color: #dc2626;
+}
+
+.old-price {
+  font-family: Barlow, sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 19.6px;
+  line-height: 19.6px;
+  letter-spacing: -0.56px;
+  vertical-align: middle;
+  text-decoration: line-through;
+  color: #111827;
+}
+
+.shop-price :nth-child(2) {
+  margin-top: 8px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  vertical-align: middle;
+  color: #030712;
+}
+
+/* header end */
+
+/* main start */
+
+main {
+  width: 100%;
+  margin: 30px 0px;
+}
+
+.company-skils {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: end;
+  gap: 80px;
+}
+
+.company-skil {
+  display: flex;
+  position: relative;
+}
+
+.company-skil img {
+  position: absolute;
+  bottom: -20px;
+  left: -70px;
+}
+
+.company-skil-text h2 {
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: -0.32px;
+  vertical-align: middle;
+  color: #030712;
+  margin-bottom: 8px;
+}
+
+.company-skil-text p {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18.21px;
+  letter-spacing: -0.32px;
+  vertical-align: middle;
+  color: #6b7280;
+}
+
+/* media start */
 
 @media (max-width: 1024px) {
   .middle-section,
